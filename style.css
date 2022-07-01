@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  .nav {
+    display:flex;
+    justify-content: space-evenly;
+  }
+  
+  .kaydin {
+      padding: 2% 1em 2% 0.75em;
+      font-size: 75px;
+      text-align: center;
+    color:#FFB5E9;
+    float:top-left;
+  
+  
+    
+  
+  }
+  .aboutmeh {
+    margin-top: 20%;
+    font-size: 2em
+    
+  }
+  .aboutme {
+    margin-top: 4%;
+    
+  }
+  body {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+  }
+  .kaydin {
+      position: relative;
+      margin: 5% auto 0;
+      width: 500px;
+      height: 4%;
+      background: linear-gradient(0deg, #000, #272727);
+  }
+  
+  .kaydin:before, .block:after {
+      content: '';
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      background: linear-gradient(45deg, #fb0094, #fb009f, #00ff00,#ff6f00, #ff0000, #fb0094, 
+          #00ff00, #00ff00,#ff6f00, #ff0000);
+      background-size: 500%;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      z-index: -1;
+      animation: steam 20s linear infinite;
+  }
+  
+  @keyframes steam {
+      0% {
+          background-position: 0 0;
+      }
+      50% {
+          background-position: 400% 0;
+      }
+      100% {
+          background-position: 0 0;
+      }
+  }
+  
+  .kaydin:after {
+      filter: blur(50px);
+    
+  
+  
+  
+  
